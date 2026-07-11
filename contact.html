@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Hello World</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+
+  <main class="stage">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="halo" aria-hidden="true"></div>
+
+    <section class="card wide-card" id="card">
+      <div class="badge"><span class="spark"></span> Contact</div>
+      <h1 class="page-title"><span class="gradient-text">Send a Signal</span></h1>
+      <p class="lead">Drop a tiny note into the glow. The form is demo-friendly and gives you a satisfying little confirmation when you send it.</p>
+
+      <form class="contact-form" id="contactForm">
+        <div class="field-row">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Ada Lovelace" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="ada@example.com" required>
+          </label>
+        </div>
+        <label>
+          Message
+          <textarea name="message" placeholder="Hello from the other side of the screen..." required></textarea>
+        </label>
+        <div class="actions">
+          <button type="submit">Send message</button>
+          <a class="button secondary" href="about.html">About page</a>
+        </div>
+      </form>
+    </section>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Message sent.</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
